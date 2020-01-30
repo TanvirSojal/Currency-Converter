@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Con. | Convert Currency Worldwide</title>
+        <!-- bootstrap resources -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <!-- css file -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- javascript file -->
+        <script src="js/converter.js"></script>
+
+</head>
+
+    <body>
+
+        <!-- title of the app -->
+        <div class="container-fluid d-flex justify-content-center pt-2">
+                <div class="row">
+                    <h1 class="display-4">Currency Con.</h1>
+                </div>
+        </div>
+
+        <!-- input from the user -->
+       <form name="converter-form" action="">
+           <div class="container-fluid pt-4">
+               <!-- input boxes -->
+               <div class="row">
+                   
+                   <div class="col-sm-3 offset-sm-4">
+                       <div class="form-group">
+                         <label for=""></label>
+                         <input type="number" name="" id="value" class="form-control" placeholder="0.00" aria-describedby="">
+                       </div>
+                   </div>
+                   <div class="col-sm-4 pt-4 pl-1 combobox">
+                       <div class="col-sm-3">
+                          <select class="form-control" id = "currency1">
+                            <option value="USD">USD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                            <option value="ZAR">ZAR</option>
+                            <option value="BRL">BRL</option>
+                            <option value="INR">INR</option>
+                            <option value="MXN">MXN</option>
+                          </select>
+                       </div>
+                   </div>
+                   
+                </div>
+
+                <div class="row">
+                   
+                    <div class="col-sm-3 offset-sm-4">
+                        <div class="form-group">
+                          <label for=""></label>
+                          <input type="number" name="" id="result" class="form-control" placeholder="result" aria-describedby="" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pt-4 pl-1">
+                        <div class="col-sm-3">
+                           <select class="form-control" id = "currency2">
+                               <option value="USD">USD</option>
+                               <option value="CAD">CAD</option>
+                               <option value="EUR">EUR</option>
+                               <option value="AUD">AUD</option>
+                               <option value="ZAR">ZAR</option>
+                               <option value="BRL">BRL</option>
+                               <option value="INR">INR</option>
+                               <option value="MXN">MXN</option>
+                           </select>
+                        </div>
+                    </div>
+                    
+                 </div>
+                
+               <div class="row">
+                   <div class="col-sm-4 offset-sm-4 pt-4">
+                    <button type="button" class="btn btn-lg btn-block button-convert" onclick="convertCurrency()">Convert</button>
+                   </div>
+               </div>
+           </div>
+       </form>
+    </body>
+
+</html>
